@@ -16,7 +16,7 @@ const App = () => {
     }
 
     useEffect(() => {
-        axios.get(`http://api.weatherapi.com/v1/current.json?key=6bb5c32d61484f9387d200901241712&q=${city}`)
+        axios.get(`https://api.weatherapi.com/v1/current.json?key=6bb5c32d61484f9387d200901241712&q=${city}`)
             .then(function (response) {
                 // handle success
                 console.log(response.data);
